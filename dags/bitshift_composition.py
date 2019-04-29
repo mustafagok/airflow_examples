@@ -15,8 +15,7 @@ dag = DAG(
     default_args=default_args,
     description='example DAG to show operator relationship methods',
     catchup=False,
-    schedule_interval=None,
-)
+    schedule_interval=None)
 
 op1 = DummyOperator(
     task_id='op1',

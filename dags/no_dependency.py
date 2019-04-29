@@ -15,8 +15,7 @@ dag = DAG(
     default_args=default_args,
     description='example DAG without task dependencies',
     catchup=False,
-    schedule_interval=None,
-)
+    schedule_interval=None)
 
 task_ids = ['task_A',
             'task_B',

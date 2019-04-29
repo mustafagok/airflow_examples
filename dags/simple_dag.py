@@ -15,8 +15,7 @@ dag = DAG(
     default_args=default_args,
     description='simple DAG',
     catchup=False,
-    schedule_interval=None,
-)
+    schedule_interval=None)
 
 # a simple DAG consist of three tasks: A, B, and C.
 # task A has to run successfully before task B can run, but task C can run anytime.
