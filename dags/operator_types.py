@@ -9,7 +9,7 @@ default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
     'start_date': airflow.utils.dates.days_ago(1),
-    'email': 'example@mail.com',
+    'email': 'user@example.com',
     'retries': 2,
 }
 
@@ -32,7 +32,7 @@ python_op = PythonOperator(
 
 email_op = EmailOperator(
     task_id='email_op',
-    to='example@mail.com',
+    to='user@example.com',
     subject='Airflow Email Operator Example',
     html_content='<p>Airflow <b>Email Operator</b> Example Mail Body</p>',
     mime_charset='utf-8',

@@ -7,7 +7,7 @@ default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
     'start_date': airflow.utils.dates.days_ago(1),
-    'email': 'example@mail.com',
+    'email': 'user@example.com',
     'retries': 2,
 }
 
